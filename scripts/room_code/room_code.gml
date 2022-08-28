@@ -45,6 +45,10 @@ function Flashlight() : Inventory() constructor{
 Name = "Flashlight";
 
 }
+
+
+
+
 /*
 commandList
 
