@@ -2,13 +2,12 @@
 #macro GUI_H display_get_gui_height()
 
 enum GameCommand{
+	Null,
 	Look,
 	Hit,
 	Hold,
 	Pump,
 	Use,
-	
-	
 }
 
 global.Game_Command = GameCommand.Look;

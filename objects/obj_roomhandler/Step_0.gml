@@ -16,6 +16,7 @@ if (mouse_check_button_pressed(mb_left) and not global.talking_time)
 		//interactives
 		if(object_is_ancestor(_actor.object_index,obj_Base_Interactive)){
 		switch(global.Game_Command){
+		case GameCommand.Null: with(_actor){ CM_Commands();} break;
 		case GameCommand.Look: with(_actor){ CM_Look();} break;
 		case GameCommand.Hold: with(_actor){ CM_Hold();} break;
 		case GameCommand.Hit: with(_actor){ CM_Hit();} break;

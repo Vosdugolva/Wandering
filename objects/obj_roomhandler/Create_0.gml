@@ -32,3 +32,4 @@ line_Width = textBox_Width - border*2;
 txtb_spr = spr_Textbox
 txtb_img = 0;
 txtb_img_spd = 6/60;
+

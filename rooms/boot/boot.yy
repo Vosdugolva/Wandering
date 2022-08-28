@@ -19,6 +19,8 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Settings","path":"objects/obj_Settings/obj_Settings.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":208.0,"resourceVersion":"1.0","name":"inst_419EA8C8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_RoomHandler","path":"objects/obj_RoomHandler/obj_RoomHandler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":192.0,"resourceVersion":"1.0","name":"inst_6AF3106D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Event_billboard","path":"objects/Event_billboard/Event_billboard.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":176.0,"resourceVersion":"1.0","name":"inst_2736ECD","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"pubsub_manager","path":"objects/pubsub_manager/pubsub_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":160.0,"resourceVersion":"1.0","name":"inst_30D9F064","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":true,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Commands","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"spr_BG","path":"sprites/spr_BG/spr_BG.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
@@ -29,6 +31,8 @@
   "instanceCreationOrder": [
     {"name":"inst_419EA8C8","path":"rooms/Boot/Boot.yy",},
     {"name":"inst_6AF3106D","path":"rooms/Boot/Boot.yy",},
+    {"name":"inst_2736ECD","path":"rooms/Boot/Boot.yy",},
+    {"name":"inst_30D9F064","path":"rooms/Boot/Boot.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

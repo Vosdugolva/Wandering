@@ -1,17 +1,14 @@
 {
   "spriteId": {
-    "name": "Sprite8",
-    "path": "sprites/Sprite8/Sprite8.yy",
+    "name": "Sprite48",
+    "path": "sprites/Sprite48/Sprite48.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": {
-    "name": "obj_Base_Interactive",
-    "path": "objects/obj_Base_Interactive/obj_Base_Interactive.yy",
-  },
+  "persistent": true,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,16 +23,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Rat_Room",
-    "path": "folders/Objects/RoomContent/Rat_Room.yy",
+    "name": "Event Manager",
+    "path": "folders/Event Manager.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Rat",
+  "name": "Event_billboard",
   "tags": [],
   "resourceType": "GMObject",
 }
