@@ -49,6 +49,7 @@ Name = "Flashlight";
 
 
 //set up for automatically generated commands
+// working...
 
 /*
 commandList
