@@ -2,4 +2,3 @@
 // You can write your code in this editor
 
 
-room_goto(Rat_room);

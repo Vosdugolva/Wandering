@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite5",
-    "path": "sprites/Sprite5/Sprite5.yy",
+    "name": "Sprite6",
+    "path": "sprites/Sprite6/Sprite6.yy",
   },
   "solid": false,
   "visible": true,
@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_Base_Mover",
-    "path": "objects/obj_Base_Mover/obj_Base_Mover.yy",
+    "name": "obj_Base_Interactive",
+    "path": "objects/obj_Base_Interactive/obj_Base_Interactive.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,15 +24,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Rat_Room",
-    "path": "folders/Objects/RoomContent/Rat_Room.yy",
+    "name": "StartRoom",
+    "path": "folders/Objects/RoomContent/StartRoom.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_To_Rat_Room",
+  "name": "obj_drawer",
   "tags": [],
   "resourceType": "GMObject",
 }

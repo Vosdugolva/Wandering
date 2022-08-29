@@ -24,11 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":11,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"goto_room","path":"objects/obj_Base_Mover/obj_Base_Mover.yy",},"objectId":{"name":"obj_Base_Mover","path":"objects/obj_Base_Mover/obj_Base_Mover.yy",},"value":"StartRoom","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "StartRoom",
     "path": "folders/Objects/RoomContent/StartRoom.yy",

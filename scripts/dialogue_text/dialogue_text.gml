@@ -66,7 +66,21 @@ global.Game_Dialogue = {
 		},
 		
 		MagicBag : {
-			a: "You find a strange bag filled with many pockets, inside it was an old set of bellows, a flashlight, and a Key!"
+			a: "You find a strange bag filled with many pockets, inside it was a Key!"
+		},
+		
+		Startroom_drawer_1 : {
+			a: "You open the drawers in the hopes of finding something useful, inside you see an old fashion bellows.",
+			b: "You've got nothing to carry it in so you leave it there for now."
+		},
+		
+		Startroom_drawer_2 : {
+			a: "You open the drawers in the hopes of finding something useful, inside you see an old fashion bellows.",
+			b: "you take it an add it into your bag!"
+		},
+		
+		Startroom_drawer_3 : {
+			a:"Nothing but dust remains within the drawer"
 		},
 		
 		Locked_1 : {

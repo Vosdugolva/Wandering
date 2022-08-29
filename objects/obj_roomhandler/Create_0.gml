@@ -45,7 +45,7 @@ Inv_Remove = function(_Remove_item){
 			for(var i=0;i<_size;i++){
 			var _item = Main_inventory[| i]
 				show_debug_message(_item);
-			if(_item[$ "Name"] = _Remove_item){ds_list_delete(Main_inventory,i);}	
+			if(_item[$ "Name"] = _Remove_item){ds_list_delete(Main_inventory,i); break;}	
 	
 	}
 }
