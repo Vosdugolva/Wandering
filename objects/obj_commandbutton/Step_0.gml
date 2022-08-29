@@ -3,14 +3,16 @@
 
 
 
-if (mouse_check_button(mb_left) and not global.talking_time)
+if (mouse_check_button_pressed(mb_left) and not global.talking_time)
 {
 	var _actor = instance_position(mouse_x,mouse_y,self)
     if position_meeting(mouse_x, mouse_y, _actor)
     {
 		
-		with(_actor){global.Game_Command = Command_Type}
-			
+		with(_actor){
+			global.Game_Command = Command_Type;
+			run_command(global.Command_Target);
+			}	
 		
         
     }

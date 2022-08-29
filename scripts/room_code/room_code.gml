@@ -60,7 +60,7 @@ Name = "Room Key";
 
 function spawn_commands(_input_list)
 {
-
+global.Command_Target = id;
 var _cmnd_list = global.commandList;
 var _size = array_length(_input_list)
 var _x = 24;
@@ -100,4 +100,18 @@ function Remove_inventory_item(_item){
 		with(obj_RoomHandler){
 			Inv_Remove(_item);
 			}	
+}
+
+function run_command(_actor,_cmnd = global.Game_Command){
+		switch(_cmnd){
+		case GameCommand.Null: with(_actor){ CM_Commands();} break;
+		case GameCommand.Look: with(_actor){ CM_Look();} break;
+		case GameCommand.Hold: with(_actor){ CM_Hold();} break;
+		case GameCommand.Hit: with(_actor){ CM_Hit();} break;
+		case GameCommand.Pump: with(_actor){ CM_Pump();} break;
+		case GameCommand.Use: with(_actor){ CM_Use();} break;
+		case GameCommand.Speak: with(_actor){ CM_Speak();} break;
+		default: break;
+			
+		}
 }

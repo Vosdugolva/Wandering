@@ -21,4 +21,5 @@ Speak: GameCommand.Speak,
 }
 
 global.Game_Command = GameCommand.Look;
+global.Command_Target = noone;
 global.Use_item = ""
