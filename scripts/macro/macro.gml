@@ -8,6 +8,16 @@ enum GameCommand{
 	Hold,
 	Pump,
 	Use,
+	Speak,
+}
+
+//used for command listings
+global.commandList = {
+Look: GameCommand.Look,
+Hit: GameCommand.Hit,
+Hold: GameCommand.Hold,
+Pump: GameCommand.Pump,
+Speak: GameCommand.Speak,
 }
 
 global.Game_Command = GameCommand.Look;

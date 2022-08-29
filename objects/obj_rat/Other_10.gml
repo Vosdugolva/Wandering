@@ -1,11 +1,6 @@
-/// @description Insert description here
+/// @description initial checks
 // You can write your code in this editor
 
-
-
-
-// Inherit the parent event
-event_inherited();
 
 //show_debug_message(billboard_read("Rat_size"));
 if(billboard_read("Rat_size") = 1)

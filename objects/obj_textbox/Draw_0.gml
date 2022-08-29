@@ -2,7 +2,7 @@ textbox_x = camera_get_view_x(view_camera[0]) + 16;
 textbox_y = camera_get_view_y(view_camera[0] ) + 152;
 textbox_y_Shift = 0;
 
-Key_accept = keyboard_check_pressed(vk_space);
+Key_accept = mouse_check_button_pressed(mb_left);
 if(key_accept_delay)key_accept_delay--;
 Key_Up = keyboard_check_pressed(ord("W"));
 Key_Down = keyboard_check_pressed(ord("S"));

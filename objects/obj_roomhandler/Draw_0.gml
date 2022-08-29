@@ -34,9 +34,15 @@ if(not global.talking_time){Spl_Active = false;}
 {
 var _size = ds_list_size(Main_inventory)
 _size = clamp(_size,0,7);
+draw_set_color(c_black);
 for(var i = Cursor_offset; i < _size; i++){
 	var _place = ((Inv_y2-Inv_y1)/7)*i;
 	var _Inv = Main_inventory[| i]
+	if(global.Game_Command = GameCommand.Use){
+		if(Cursor_at = i) draw_set_color(c_red);
+		else {draw_set_color(c_black);}
+		}
+
 	draw_text(Inv_x1+18,Inv_y1+_place,_Inv[$ "Name"])
 	}
 	

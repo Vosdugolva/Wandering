@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite8",
-    "path": "sprites/Sprite8/Sprite8.yy",
+    "name": "Sprite6",
+    "path": "sprites/Sprite6/Sprite6.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,11 +31,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Rat_Room",
-    "path": "folders/Objects/RoomContent/Rat_Room.yy",
+    "name": "StartRoom",
+    "path": "folders/Objects/RoomContent/StartRoom.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Rat",
+  "name": "obj_bag_item",
   "tags": [],
   "resourceType": "GMObject",
 }

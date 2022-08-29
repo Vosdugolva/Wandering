@@ -8,7 +8,7 @@ image_index = 0;
 
 CM_Commands = function(){
 create_textbox("Rat_Look",false);
-spawn_commands();
+spawn_commands(["Look","Speak","Hit","Hold"]);
 	
 }
 
@@ -34,7 +34,11 @@ create_textbox("Rat_Pump",false);
 billboard_post("Rat_size",1);
 Draw_Splash_Screen(spls_Rat,0);
 instance_change(obj_Rat_size2,true);
-	
+clear_game_command()
+}
+
+CM_Speak = function(){
+create_textbox("Rat_Speak",false);
 }
 
 CM_Use = function(){
@@ -44,3 +48,5 @@ switch(global.Use_item){
 	}
 clear_commands();
 }
+
+event_user(0);

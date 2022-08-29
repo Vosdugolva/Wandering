@@ -18,6 +18,7 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_To_Hall_1","path":"objects/obj_To_Hall_1/obj_To_Hall_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":48.0,"resourceVersion":"1.0","name":"inst_1CD04F63","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_bag_item","path":"objects/obj_bag_item/obj_bag_item.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5625,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":80.0,"resourceVersion":"1.0","name":"inst_2DDF8DA7","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_CommandButton","path":"objects/obj_CommandButton/obj_CommandButton.yy",},"inheritCode":true,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_41563CFF","path":"rooms/Base_Room/Base_Room.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":24.0,"y":160.0,"resourceVersion":"1.0","name":"inst_41563CFF","tags":[],"resourceType":"GMRInstance",},
@@ -36,6 +37,7 @@
     {"name":"inst_133DFFF9","path":"rooms/StartRoom/StartRoom.yy",},
     {"name":"inst_26D381EC","path":"rooms/StartRoom/StartRoom.yy",},
     {"name":"inst_1CD04F63","path":"rooms/StartRoom/StartRoom.yy",},
+    {"name":"inst_2DDF8DA7","path":"rooms/StartRoom/StartRoom.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

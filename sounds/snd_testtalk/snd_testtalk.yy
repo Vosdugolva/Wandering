@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.27,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_testtalk.wav",
-  "duration": 0.100544,
+  "duration": 0.021769,
   "parent": {
     "name": "Dialogue System",
     "path": "folders/Dialogue System.yy",

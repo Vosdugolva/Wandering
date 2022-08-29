@@ -48,6 +48,10 @@ global.Game_Dialogue = {
 			b: "in spite of this, you feel fine."
 		},
 		
+		Intro_Hall_1 : {
+			a: "You step out of that room into a hallway, you see three other doors on the other walls of the room.",
+		},
+		
 		Intro_LivingRoom: {
 			a: "You step into a cluttered room filled with dated furniture",
 			b: "empty dring cups can be found all over the place."
@@ -59,6 +63,18 @@ global.Game_Dialogue = {
 		
 		No_effect : {
 			a: "Nothing happened",
+		},
+		
+		MagicBag : {
+			a: "You find a strange bag filled with many pockets, inside it was an old set of bellows, a flashlight, and a Key!"
+		},
+		
+		Locked_1 : {
+			a: "the door is locked, it seems like it would take a key",
+		},
+		
+		Unlocked_1 : {
+			a: "the door unlocked!",
 		},
 		
 #region Living Room
@@ -104,6 +120,10 @@ global.Game_Dialogue = {
 			b: "you tug it loose, causing air to escape before shoving the pump hose in, and you began to thrust the plunger, forcing air into the rodent.",
 			c: "each push caused the rat to swell, steadily getting larger and larger.",
 			d: "by the time you stop, the rat has gone from merely being the size of a dodgeball to being just as tall and 3 times as wide as you!",
+		},
+		
+	   Rat_Speak : {
+			a: "You try conversing with the rat but it doesn't seem to have much to say, it just stares back at you.",
 		},
 
 #endregion

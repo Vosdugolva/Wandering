@@ -3,7 +3,7 @@
 
 
 
-if mouse_check_button(mb_left)
+if (mouse_check_button(mb_left) and not global.talking_time)
 {
 	var _actor = instance_position(mouse_x,mouse_y,self)
     if position_meeting(mouse_x, mouse_y, _actor)
