@@ -35,7 +35,7 @@ clear_game_command();
 }
 
 CM_Speak = function(){
-create_textbox("Rat_Speak",false);
+create_textbox("Rat_Speak_3",false);
 }
 
 CM_Use = function(){

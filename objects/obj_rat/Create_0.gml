@@ -38,7 +38,20 @@ clear_game_command()
 }
 
 CM_Speak = function(){
-create_textbox("Rat_Speak",false);
+	var _message = 0;
+	//rat opening message
+	if(not billboard_read("Spoke_to_rat"))
+		{_message = 0;}
+	else{
+		if(billboard_read("checked_startroom_drawer")){_message = 2}
+		else{_message = 1;}
+	}
+	
+	switch(_message){
+	case 1: create_textbox("Rat_Speak_1",false); break;
+	case 2: create_textbox("Rat_Speak_2",false); break;
+	default: billboard_post("Spoke_to_rat",true); create_textbox("Rat_Speak",false); break;
+	}
 }
 
 CM_Use = function(){

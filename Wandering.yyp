@@ -14,6 +14,7 @@
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":20,},
     {"id":{"name":"bg_Hall_1","path":"sprites/bg_Hall_1/bg_Hall_1.yy",},"order":1,},
     {"id":{"name":"spr_main_font","path":"sprites/spr_main_font/spr_main_font.yy",},"order":5,},
+    {"id":{"name":"bg_Rat_Room","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"order":4,},
     {"id":{"name":"obj_Pump_CmndButton","path":"objects/obj_Pump_CmndButton/obj_Pump_CmndButton.yy",},"order":6,},
     {"id":{"name":"StartRoom","path":"rooms/StartRoom/StartRoom.yy",},"order":1,},
     {"id":{"name":"par_clickable","path":"objects/par_clickable/par_clickable.yy",},"order":3,},

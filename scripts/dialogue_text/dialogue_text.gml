@@ -91,7 +91,7 @@ global.Game_Dialogue = {
 			a: "the door unlocked!",
 		},
 		
-#region Living Room
+#region Rat Room
 
 //Rat Size 1
 		Rat_Look : {
@@ -117,6 +117,22 @@ global.Game_Dialogue = {
 			c: "each push caused the rat to swell, steadily getting larger and larger.",
 			d: "by the time you stop, the rat has gone from merely being the size of a dodgeball to being just as tall and 3 times as wide as you!",
 		},
+		
+	   Rat_Speak : {
+			a: "Much to your surprise, the large rat can talk!",
+			b: "'Hey there! been a while since I've seen a person up here! what brings you to this dusty old mansion?'",
+			c: "'...you just woke up in the room down the hall and was locked in? how odd, that room has been locked since forever! always wondered what was inside.'",
+			d: "'Well, this might seem like a weird requests but do you think you can find something you can use to inflate something with? I can help you out once you have it'"
+			},
+			
+		Rat_Speak_1 : {
+			a: "Have you found anything yet? there might be an old [cr]bellows[ck] somewhere up here."	
+			},
+			
+		Rat_Speak_2 : {
+			a: "Hey! you found something! okay now this is going to sound a little weird but I want you to stick that in me and start pumping!",	
+			},
+			
 //Rat size 2
 
 		Rat_Look_2 : {
@@ -136,8 +152,13 @@ global.Game_Dialogue = {
 			d: "by the time you stop, the rat has gone from merely being the size of a dodgeball to being just as tall and 3 times as wide as you!",
 		},
 		
-	   Rat_Speak : {
-			a: "You try conversing with the rat but it doesn't seem to have much to say, it just stares back at you.",
+	   Rat_Speak_3 : {
+			a: "''Hehe! look at me! I bet you've never seen a rat this big before!''",
+			b: "''of course I'm really just a big balloon, soft and squishy. but that's alright. I'm more of a hugger anyways''",
+			c: "''now there are many creatures around this mansion that are just like me! we look like real critters only we can blow up like big balloons! ''",
+			d: "''maybe if we find the others, we can help figure out why you're here, and perhaps have some fun along the way too!''",
+			e: "''for now, you can deflate me and carry me around in your bag, I'll be okay so long as you reinflate me later.''",
+			f: "''I can help by getting into small places, of course if you ever need a big rat for something, just pump me up!''"
 		},
 
 #endregion

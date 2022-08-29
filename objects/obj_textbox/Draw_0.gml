@@ -61,6 +61,12 @@ if(setup == false)
 					scr_set_color(c,i,c_blue);
 					text_Length[i] = string_length(text[i]);
 					}
+				if(_col_code == "[ck]")
+					{
+					text[i] = string_delete(text[i], _char_pos, 4);
+					scr_set_color(c,i,c_black);
+					text_Length[i] = string_length(text[i]);
+					}
 				//let's piggyback off of this to find a code for billboard data
 					if(_col_code == "[bb]")
 					{
