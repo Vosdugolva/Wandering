@@ -38,7 +38,14 @@ Use = function(){
 		global.Use_item = Name;
 		global.Game_Command = GameCommand.Use
 		};
-	}	
+	};
+Use_on = function(_item){
+	switch(_item){
+	default: create_textbox("No_effect",false); break;
+	}
+clear_commands();
+	
+}
 	
 };
 
@@ -56,11 +63,106 @@ Name = "Room Key";
 
 }
 
+
+function Inflatable() : Inventory() constructor{
+Name = "Inflatable";
+id = self;
+Use = function(){
+	if(not global.talking_time)
+		{
+		var _text = "do what with " + Name + "?"
+		with(instance_create_depth(0,0,-99999,obj_textBox))
+			{
+			
+			scr_text(_text);
+			global.talking_time = true;
+			}
+		spawn_commands(["Speak","Hold"],true)
+		};
+	}
+
+CM_Commands = function(){}
+CM_Hit = function(){}
+CM_Hold = function(){}
+CM_Look = function(){}
+CM_Pump = function(){}
+CM_Speak = function(){}
+Use_on = function(_item){
+	switch(_item){					
+	default: create_textbox("No_effect",false); break;
+	}
+clear_commands();
+	
+}
+
+}
+
+
+function Rat_Balloon() : Inflatable() constructor{
+Name = "Rat Balloon";
+CM_Speak = function(){
+		var _message = 0;
+		//rat opening message
+		if(not billboard_read("Spoke_to_rat"))
+			{_message = 0;}
+		else{
+			if(billboard_read("checked_startroom_drawer")){_message = 2}
+			else{_message = 1;}
+		}
+	
+		switch(_message){
+		case 1: create_textbox("Rat_Speak_1",false); break;
+		case 2: create_textbox("Rat_Speak_2",false); break;
+		default: billboard_post("Spoke_to_rat",true); create_textbox("Rat_Speak",false); break;
+		}
+	}
+CM_Hold = function(){
+	create_textbox("Rat_Hold",false);
+	Draw_Splash_Screen(spls_Rat,1);
+	}
+	
+Use_on = function(_item){
+	show_debug_message(_item + "on rat")
+	switch(_item){		
+	case "Bellows" : create_textbox("Rat_Pump",false);
+					Draw_Splash_Screen(spls_Rat,0);
+					clear_game_command()
+					break;
+					
+	default: create_textbox("No_effect",false); break;
+	}
+clear_commands();
+	
+}
+	
+
+}
+
+//for inflatable structs, finds their inventory slot and returns it
+function Find_inflatable(_name){
+
+with(obj_RoomHandler){
+			var _size = ds_list_size(Main_inventory);
+			for(var i=0;i<_size;i++){
+			var _item = Main_inventory[| i]
+				//show_debug_message(_item);
+			if(_item[$ "Name"] = _name){return i;}	
+	
+	}
+}
+	
+}
+
 //set up for automatically generated commands
 
-function spawn_commands(_input_list)
+function spawn_commands(_input_list, is_inventory = false)
 {
 global.Command_Target = id;
+if(is_inventory)
+	{
+	global.Command_Target = obj_RoomHandler;
+	}
+show_debug_message(global.Command_Target)
 var _cmnd_list = global.commandList;
 var _size = array_length(_input_list)
 var _x = 24;
@@ -103,6 +205,23 @@ function Remove_inventory_item(_item){
 }
 
 function run_command(_actor,_cmnd = global.Game_Command){
+	
+	//if this is an inventory item, it will point to the object handler
+		if(_actor = obj_RoomHandler){
+					switch(_cmnd){
+				case GameCommand.Null: with(_actor){ Main_inventory[| Cursor_at][$ "CM_Commands"]();} break;
+				case GameCommand.Look: with(_actor){ Main_inventory[| Cursor_at][$ "CM_Look"]();} break;
+				case GameCommand.Hold: with(_actor){ Main_inventory[| Cursor_at][$ "CM_Hold"]();} break;
+				case GameCommand.Hit: with(_actor){ Main_inventory[| Cursor_at][$ "CM_Hit"]();} break;
+				case GameCommand.Pump: with(_actor){ Main_inventory[| Cursor_at][$ "CM_Pump"]();} break;
+				case GameCommand.Use: with(_actor){ Main_inventory[| Cursor_at][$ "Use_on"]();} break;
+				case GameCommand.Speak: with(_actor){Main_inventory[| Cursor_at][$ "CM_Speak"]();} break;
+				default: break;
+				}
+			clear_commands();
+			exit;
+			}
+	
 		switch(_cmnd){
 		case GameCommand.Null: with(_actor){ CM_Commands();} break;
 		case GameCommand.Look: with(_actor){ CM_Look();} break;

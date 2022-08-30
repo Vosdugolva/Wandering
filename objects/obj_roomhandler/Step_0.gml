@@ -16,6 +16,7 @@ if (mouse_check_button_pressed(mb_left))
 			switch(global.Game_Command){
 			case GameCommand.Use: with(_actor){ CM_Use();} break;
 			default: with(_actor) event_user(1);
+			clear_commands();
 			}
 			exit;
 		}
@@ -30,12 +31,12 @@ if (mouse_check_button_pressed(mb_left))
 		case GameCommand.Use: with(_actor){ CM_Use();} break;
 		case GameCommand.Speak: with(_actor){ CM_Speak();} break;
 		default: break;
-			
 		}
+		clear_commands();
 		exit;
 		}
         
-		show_debug_message("Click");
+		//show_debug_message("Click");
     }
 	
 	//Checks if the player clicks on an inventory item.
@@ -50,7 +51,8 @@ if (mouse_check_button_pressed(mb_left))
 		
 		var _Inv = Main_inventory[| Cursor_at]
 		if(is_undefined(_Inv))exit;
-		_Inv[$ "Use"]();
+		if(global.Game_Command = GameCommand.Use) _Inv[$ "Use_on"](global.Use_item);
+		else{_Inv[$ "Use"]();}
 		show_debug_message(_Inv[$ "Name"])
 		
 	}

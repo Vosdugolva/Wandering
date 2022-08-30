@@ -49,3 +49,5 @@ Inv_Remove = function(_Remove_item){
 	
 	}
 }
+
+Add_inventory_item(new Rat_Balloon())
