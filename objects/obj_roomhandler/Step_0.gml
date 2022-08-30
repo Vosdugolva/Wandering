@@ -32,7 +32,7 @@ if (mouse_check_button_pressed(mb_left))
 		case GameCommand.Speak: with(_actor){ CM_Speak();} break;
 		default: break;
 		}
-		clear_commands();
+		//clear_commands();
 		exit;
 		}
         

@@ -35,6 +35,7 @@ Use = function(){
 			scr_text(_text);
 			global.talking_time = true;
 			}
+		clear_commands();
 		global.Use_item = Name;
 		global.Game_Command = GameCommand.Use
 		};
@@ -100,6 +101,9 @@ clear_commands();
 
 function Rat_Balloon() : Inflatable() constructor{
 Name = "Rat Balloon";
+Use = function(){
+	create_quick_textbox("it's a flacid balloon rat, you'll need something to blow him up!");
+	};
 CM_Speak = function(){
 		var _message = 0;
 		//rat opening message
@@ -124,8 +128,10 @@ CM_Hold = function(){
 Use_on = function(_item){
 	show_debug_message(_item + "on rat")
 	switch(_item){		
-	case "Bellows" : create_textbox("Rat_Pump",false);
+	case "Bellows" : create_quick_textbox("You take out the flacid rodent and blow it up to size!");
 					Draw_Splash_Screen(spls_Rat,0);
+					Set_active_inflatable(obj_Active_Rat);
+					Remove_inventory_item("Rat Balloon")
 					clear_game_command()
 					break;
 					
@@ -157,6 +163,7 @@ with(obj_RoomHandler){
 
 function spawn_commands(_input_list, is_inventory = false)
 {
+clear_commands();
 global.Command_Target = id;
 if(is_inventory)
 	{
@@ -203,6 +210,33 @@ function Remove_inventory_item(_item){
 			Inv_Remove(_item);
 			}	
 }
+
+function Set_active_inflatable(_active){
+		with(obj_RoomHandler){
+			Spawn_Active(_active);
+			}	
+}
+
+function get_active_inflatable_size(){
+	var _val = 0;
+		with(obj_RoomHandler){
+			_val = get_active_size();
+			}	
+	return _val;
+}
+
+function set_active_inflatable_size(_size){
+		with(obj_RoomHandler){
+			set_active_size(_size);
+			}	
+}
+
+function adjust_active_inflatable_size(_size){
+		with(obj_RoomHandler){
+			adjust_active_size(_size);
+			}	
+}
+
 
 function run_command(_actor,_cmnd = global.Game_Command){
 	

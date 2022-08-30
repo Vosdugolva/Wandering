@@ -46,20 +46,22 @@ func_name = _func;
 //page_number++;
 }
 
-function scr_get_dialogue(_tag = "basic"){
+function scr_get_dialogue(_tag = "basic", _d_struct = global.Game_Dialogue){
 
 //gonna try and recode this to use accessors instead
 	
 //first let's make sure the dialogue tag exists. if not, we return the
 //error handler message
 	
-	if (!variable_struct_exists(global.Game_Dialogue,_tag))
-		{_tag = "basic";}
+	if (!variable_struct_exists(_d_struct,_tag))
+		{_d_struct = global.Game_Dialogue;
+			_tag = "basic";
+			}
 	
 	//grab the struct inside the dialogue struct, get all it's keys in an array,
 	//and sort them in alphabetical order, the variable names are in
 	//alphabets
-	var strc = variable_struct_get(global.Game_Dialogue,_tag);
+	var strc = variable_struct_get(_d_struct,_tag);
 	var keys = variable_struct_get_names(strc);
 	array_sort(keys, true); 
 	
@@ -146,6 +148,24 @@ if(not global.talking_time or _option)
 		}
 	global.talking_time = true;
 	}
+}
+
+function create_quick_textbox(_text){
+		with(instance_create_depth(0,0,-99999,obj_textBox))
+			{
+			
+			scr_text(_text);
+			global.talking_time = true;
+			}
+}
+
+function create_struct_textbox(_tag,_struct){
+		with(instance_create_depth(0,0,-99999,obj_textBox))
+			{
+			
+			scr_get_dialogue(_tag,_struct);
+			global.talking_time = true;
+			}
 }
 
 ///@param option
