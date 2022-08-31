@@ -56,5 +56,16 @@ for(var i = Cursor_offset; i < _size; i++){
 }
 
 //Draw active inflatable hud
-draw_set_color(c_black);
-draw_text(Active_x+9,Active_y-9,"Active")
+if(Active_inflatable){
+	draw_set_color(c_black);
+	draw_text(Active_x+9,Active_y-9,"Active")
+	for(var i = 1; i <= 3; i++){
+
+	var _frame = 0;
+	if(i <= get_active_inflatable_size()){_frame=1;}
+
+	var _x = Active_x+56;
+	var _y = Active_y + 40 - (i*9)
+	draw_sprite(Sprite7,_frame,_x,_y);
+	}
+}

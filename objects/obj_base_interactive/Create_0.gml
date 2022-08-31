@@ -16,3 +16,5 @@ switch(global.Use_item){
 	}
 clear_commands();
 }
+
+event_user(0);

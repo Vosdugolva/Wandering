@@ -42,7 +42,15 @@ clear_game_command()
 }
 
 CM_Speak = function(){
-	create_struct_textbox("Chat",Dialogue);
+	switch(room){
+	case StartRoom: create_struct_textbox("Speak_StartRoom",Dialogue); exit;
+	case Rat_room: create_struct_textbox("Speak_Rat_Room",Dialogue); exit;
+	case Hall_1: create_struct_textbox("Speak_Hall_1",Dialogue); exit;
+	default:  break;
+	}
+	
+	create_struct_textbox("Speak",Dialogue);
+
 }
 
 

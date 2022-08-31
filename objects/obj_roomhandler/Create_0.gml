@@ -76,3 +76,6 @@ Active_size = 0;
 get_active_size = function(){return Active_size; }
 set_active_size = function(_size){Active_size = _size; }
 adjust_active_size = function(_size){Active_size += _size; Active_size = clamp(Active_size,0,3);}
+
+
+Add_inventory_item(new Rat_Balloon());

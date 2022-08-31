@@ -22,11 +22,29 @@ Dialogue = {
 		},
 		
 //[+]============[+]
-	Chat: {
+	//Speach
+	Speak: {
 		a: "'Hey!'",
 		b:"'How's it going?'",
 		},
 		
+	Speak_StartRoom: {
+		a: "'So this is what was inside that locked room!'",
+		b:"'Wasn't really much to it then, oh well.'",
+		},
+		
+	Speak_Rat_Room: {
+		a: "'Hey, sorry about the mess in here,'",
+		b:"'I don't get guests up here to often, if ever! this has just been my go-to quiet place.'",
+		},
+		
+	Speak_Hall_1: {
+		a: "'There's also that other door that I've been wondering about. '",
+		b: "'Lizardman always goes in and out of there but he won't tell anyone what's inside.'",
+		c: "'No one can get in either because it's also locked from the inside.'",
+		d: "'How does he get in? he has the power to move through walls somehow.'",
+		},
+//[+]============[+]		
 	Inflate_1:{ //to size 2
 		a:"With your chosen device, you begin pumping up the rat.",
 		},

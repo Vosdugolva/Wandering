@@ -7,30 +7,30 @@ image_speed = 0;
 image_index = 0;
 
 CM_Commands = function(){
-create_textbox("Rat_Look",false);
+create_struct_textbox("Look",Dialogue);
 spawn_commands(["Look","Speak","Hit","Hold"]);
 	
 }
 
 CM_Look = function(){
-create_textbox("Rat_Look",false);
+create_struct_textbox("Look",Dialogue);
 	
 }
 
 
 CM_Hold = function(){
-create_textbox("Rat_Hold",false);
+create_struct_textbox("Hold",Dialogue);
 Draw_Splash_Screen(spls_Rat,1);
 }
 
 
 CM_Hit = function(){
-create_textbox("Rat_Hit",false);
+create_struct_textbox("Hit",Dialogue);
 	
 }
 
 CM_Pump = function(){
-create_textbox("Rat_Pump",false);
+create_struct_textbox("Inflate",Dialogue);
 billboard_post("Rat_size",1);
 Draw_Splash_Screen(spls_Rat,0);
 instance_change(obj_Rat_size2,true);
@@ -62,4 +62,4 @@ switch(global.Use_item){
 clear_commands();
 }
 
-event_user(0);
+event_user(1);
