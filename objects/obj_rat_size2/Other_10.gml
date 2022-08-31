@@ -44,8 +44,8 @@ Dialogue = {
 		
 //[+]============[+]
 	Deflate: {
-		a: "You unplug the stopper on the rat's naval, allowing the air to escape till he goes flat again.",
-		b: "with care, you place him back into the bag.",
+		a: "You unplug the stopper on the rat's naval, allowing the air to escape till he goes flat.",
+		b: "with care, you place him into the bag.",
 		},
 	}
 

@@ -9,6 +9,7 @@ enum GameCommand{
 	Pump,
 	Use,
 	Speak,
+	Deflate,
 }
 
 //used for command listings
@@ -18,6 +19,7 @@ Hit: GameCommand.Hit,
 Hold: GameCommand.Hold,
 Pump: GameCommand.Pump,
 Speak: GameCommand.Speak,
+Deflate: GameCommand.Deflate,
 }
 
 global.Game_Command = GameCommand.Look;

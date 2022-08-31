@@ -14,7 +14,7 @@ image_index = 0;
 
 CM_Commands = function(){
 create_quick_textbox(Dialogue[$ "Command"])
-spawn_commands(["Look","Speak","Hold"]);
+spawn_commands(["Look","Speak","Hold","Deflate"]);
 	
 }
 

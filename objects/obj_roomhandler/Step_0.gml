@@ -30,6 +30,7 @@ if (mouse_check_button_pressed(mb_left))
 		case GameCommand.Pump: with(_actor){ CM_Pump();} break;
 		case GameCommand.Use: with(_actor){ CM_Use();} break;
 		case GameCommand.Speak: with(_actor){ CM_Speak();} break;
+		case GameCommand.Deflate: with(_actor){ CM_Deflate();} break;
 		default: break;
 		}
 		//clear_commands();

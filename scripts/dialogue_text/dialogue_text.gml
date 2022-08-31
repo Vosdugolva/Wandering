@@ -66,7 +66,8 @@ global.Game_Dialogue = {
 		},
 		
 		MagicBag : {
-			a: "You find a strange bag filled with many pockets, inside it was a Key!"
+			a: "You find a strange bag filled with many pockets, inside it was a Key!",
+			b: "you take the bag along with the key inside."
 		},
 		
 		Startroom_drawer_1 : {
@@ -157,7 +158,7 @@ global.Game_Dialogue = {
 			b: "''of course I'm really just a big balloon, soft and squishy. but that's alright. I'm more of a hugger anyways''",
 			c: "''now there are many creatures around this mansion that are just like me! we look like real critters only we can blow up like big balloons! ''",
 			d: "''maybe if we find the others, we can help figure out why you're here, and perhaps have some fun along the way too!''",
-			e: "''for now, you can deflate me and carry me around in your bag, I'll be okay so long as you reinflate me later.''",
+			e: "''for now, you can [cb]deflate[ck] me and carry me around in your bag, I'll be okay so long as you reinflate me later.''",
 			f: "''I can help by getting into small places, of course if you ever need a big rat for something, just pump me up!''"
 		},
 

@@ -172,9 +172,9 @@ if(is_inventory)
 show_debug_message(global.Command_Target)
 var _cmnd_list = global.commandList;
 var _size = array_length(_input_list)
-var _x = 24;
+var _x = 75;
 var _y = 160;
-var _x_inc = 32;
+var _x_inc = 0;//32;
 var _y_inc = 9;
 
 for (var i = 0; i < _size;i++){
@@ -217,6 +217,13 @@ function Set_active_inflatable(_active){
 			}	
 }
 
+function Clear_active_inflatable(_active){
+		with(obj_RoomHandler){
+			Remove_Active(_active);
+			}	
+			clear_commands();
+}
+
 function get_active_inflatable_size(){
 	var _val = 0;
 		with(obj_RoomHandler){
@@ -250,6 +257,7 @@ function run_command(_actor,_cmnd = global.Game_Command){
 				case GameCommand.Pump: with(_actor){ Main_inventory[| Cursor_at][$ "CM_Pump"]();} break;
 				case GameCommand.Use: with(_actor){ Main_inventory[| Cursor_at][$ "Use_on"]();} break;
 				case GameCommand.Speak: with(_actor){Main_inventory[| Cursor_at][$ "CM_Speak"]();} break;
+				case GameCommand.Deflate: with(_actor){Main_inventory[| Cursor_at][$ "CM_Deflate"]();} break;
 				default: break;
 				}
 			clear_commands();
@@ -264,6 +272,7 @@ function run_command(_actor,_cmnd = global.Game_Command){
 		case GameCommand.Pump: with(_actor){ CM_Pump();} break;
 		case GameCommand.Use: with(_actor){ CM_Use();} break;
 		case GameCommand.Speak: with(_actor){ CM_Speak();} break;
+		case GameCommand.Deflate: with(_actor){ CM_Deflate();} break;
 		default: break;
 			
 		}

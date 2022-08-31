@@ -3,7 +3,11 @@
 
 
 //show_debug_message(billboard_read("Rat_size"));
-if(billboard_read("Rat_size") = 1)
+if(billboard_read("Rat Deflated"))
+{
+instance_destroy();
+}
+else if(billboard_read("Rat_size") = 1)
 {
 instance_change(obj_Rat_size2,true);
 }

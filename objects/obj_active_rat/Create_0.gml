@@ -45,6 +45,14 @@ CM_Speak = function(){
 	create_struct_textbox("Chat",Dialogue);
 }
 
+
+CM_Deflate = function(){
+	create_struct_textbox("Deflate",Dialogue);
+	Clear_active_inflatable();
+	Reclaim();
+
+}
+
 CM_Use = function(){
 switch(global.Use_item){
 	case "Bellows": CM_Pump(); break;
@@ -53,4 +61,6 @@ switch(global.Use_item){
 clear_commands();
 }
 
+
+Reclaim = function(){Add_inventory_item(new Rat_Balloon());}
 event_user(0);

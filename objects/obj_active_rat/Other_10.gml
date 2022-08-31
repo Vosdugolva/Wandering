@@ -41,5 +41,11 @@ Dialogue = {
 		c:"soon with each pump, the rodents rod begins to force it's way between it's legs, swelling further and further untill suddenly, it lets out a huge rush of air!",
 		d:"as air escapes from the rat's dick, it begins to shrink down to it's original size, though still inflated, the rat appears relieved after having released all that overbuilt pressure."
 		},
+		
+//[+]============[+]
+	Deflate: {
+		a: "You unplug the stopper on the rat's naval, allowing the air to escape till he goes flat again.",
+		b: "with care, you place him back into the bag.",
+		},
 	}
 

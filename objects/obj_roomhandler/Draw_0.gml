@@ -6,15 +6,22 @@
 textbox_x = camera_get_view_x(view_camera[0]) + 16;
 textbox_y = camera_get_view_y(view_camera[0] ) + 152;
 
+
 var _txtb_x = textbox_x; //+ text_x_offset[page];
 var _txtb_y = textbox_y;
 txtb_img += txtb_img_spd;
 txtb_spr_w = sprite_get_width(txtb_spr)
 txtb_spr_h = sprite_get_height(txtb_spr)
 
-draw_sprite_ext(txtb_spr,txtb_img,_txtb_x,_txtb_y, textBox_Width/txtb_spr_w, textBox_Height/txtb_spr_h,0,c_white,1)
+//draw_sprite_ext(txtb_spr,txtb_img,_txtb_x,_txtb_y, textBox_Width/txtb_spr_w, textBox_Height/txtb_spr_h,0,c_white,1)
 
+var _txtb_1_x = textbox_x;
+var _txtb_1_w = Active_x-16;
+draw_sprite_ext(txtb_spr,txtb_img,_txtb_1_x,_txtb_y, _txtb_1_w/txtb_spr_w, textBox_Height/txtb_spr_h,0,c_white,1)
 
+var _txtb_2_x = Active_x;
+var _txtb_2_w = camera_get_view_width(view_camera[0]) - 16 - Active_x;
+draw_sprite_ext(txtb_spr,txtb_img,_txtb_2_x,_txtb_y, _txtb_2_w/txtb_spr_w, textBox_Height/txtb_spr_h,0,c_white,1)
 //Draw splash screens
 if(Spl_Active)
 {
@@ -47,3 +54,7 @@ for(var i = Cursor_offset; i < _size; i++){
 	}
 	
 }
+
+//Draw active inflatable hud
+draw_set_color(c_black);
+draw_text(Active_x+9,Active_y-9,"Active")

@@ -58,13 +58,21 @@ Active_y = 170;
 Active_size = 0;
 
 Spawn_Active = function(_Active){
-if(instance_exists(Active_inflatable)){instance_destroy(Active_inflatable);}
-Active_inflatable = instance_create_depth(Active_x,Active_y,-9999,_Active);
+if(instance_exists(Active_inflatable))
+	{
+		with(Active_inflatable){Reclaim();}
+		instance_destroy(Active_inflatable);
+		}
+Active_inflatable = instance_create_depth(Active_x+4,Active_y,-9999,_Active);
 Active_size = 1;
+}
+
+Remove_Active = function(){
+if(instance_exists(Active_inflatable)){instance_destroy(Active_inflatable);}
+Active_inflatable = noone;
+Active_size = 0;
 }
 
 get_active_size = function(){return Active_size; }
 set_active_size = function(_size){Active_size = _size; }
 adjust_active_size = function(_size){Active_size += _size; Active_size = clamp(Active_size,0,3);}
-
-Add_inventory_item(new Rat_Balloon())
