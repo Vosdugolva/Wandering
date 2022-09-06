@@ -19,19 +19,21 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Rat","path":"objects/obj_Rat/obj_Rat.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":122.0,"resourceVersion":"1.0","name":"inst_5F04AC87","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_To_Hall_1","path":"objects/obj_To_Hall_1/obj_To_Hall_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.0,"scaleY":0.375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":130.0,"resourceVersion":"1.0","name":"inst_86BBD7A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_RatHole","path":"objects/obj_RatHole/obj_RatHole.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5625,"scaleY":0.8125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":28.0,"y":96.0,"resourceVersion":"1.0","name":"inst_27D3EC5A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Commands","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
-        {"x":16.0,"y":24.0,"spriteId":{"name":"bg_Rat_Room","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"ignore":false,"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":{"name":"graphic_7F7F3888","path":"rooms/Base_Room/Base_Room.yy",},"frozen":false,"inheritItemSettings":false,"resourceVersion":"1.0","name":"graphic_7F7F3888","tags":[],"resourceType":"GMRSpriteGraphic",},
+        {"spriteId":{"name":"bg_Rat_Room","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":{"name":"graphic_7F7F3888","path":"rooms/Base_Room/Base_Room.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":24.0,"resourceVersion":"1.0","name":"graphic_7F7F3888","tags":[],"resourceType":"GMRSpriteGraphic",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Assets_1","tags":[],"resourceType":"GMRAssetLayer",},
     {"spriteId":{"name":"spr_BG","path":"sprites/spr_BG/spr_BG.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": true,
-  "creationCodeFile": "${project_dir}/rooms/Living_Room/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/Rat_room/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_5F04AC87","path":"rooms/Rat_room/Rat_room.yy",},
     {"name":"inst_86BBD7A","path":"rooms/Rat_room/Rat_room.yy",},
+    {"name":"inst_27D3EC5A","path":"rooms/Rat_room/Rat_room.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

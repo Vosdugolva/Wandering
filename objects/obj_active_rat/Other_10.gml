@@ -27,23 +27,35 @@ Dialogue = {
 		a: "'Hey!'",
 		b:"'How's it going?'",
 		},
-		
+//	[+]====[+]		
 	Speak_StartRoom: {
 		a: "'So this is what was inside that locked room!'",
 		b:"'Wasn't really much to it then, oh well.'",
 		},
-		
+//	[+]====[+]	
 	Speak_Rat_Room: {
 		a: "'Hey, sorry about the mess in here,'",
 		b:"'I don't get guests up here to often, if ever! this has just been my go-to quiet place.'",
 		},
-		
+//	[+]====[+]	
 	Speak_Hall_1: {
-		a: "'There's also that other door that I've been wondering about. '",
-		b: "'Lizardman always goes in and out of there but he won't tell anyone what's inside.'",
-		c: "'No one can get in either because it's also locked from the inside.'",
-		d: "'How does he get in? he has the power to move through walls somehow.'",
+		a: "'So that other door in the halway is important and private. not usually open to guests.'",
+		b: "'for now, you can be an exception! though I'll need to unlock the door from behind.'",
+		c: "'There's a little hole in the room I was in before that I can fit through to get in there.'",
 		},
+//	[+]====[+]	
+	Speak_AnthRoom_1: {
+		a: "'So this is the master bedroom! probably not what you were expecting!'",
+		b: "'see that big soft area in the floor over there? that's one huge mattress! what's it there for?'",
+		c: "'Well... perhaps I could show you! just climb up to that balcony and I'll give you a demonstration!'",
+		},
+		
+//	[+]====[+]	
+	Speak_AnthRoom_2: {
+		a: "'Okay! so, you seem like a guy that would enjoy a nice, big, soft balloon, well if you've got one with you, and you do now; you can hop on this giant mattress to spend a bit of time with them!'",
+		b: "'Doesn't matter how big you want us, the matteres is big enough for the both of us!'",
+		},
+		
 //[+]============[+]		
 	Inflate_1:{ //to size 2
 		a:"With your chosen device, you begin pumping up the rat.",

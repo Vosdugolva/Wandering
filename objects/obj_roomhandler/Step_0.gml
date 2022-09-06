@@ -4,6 +4,10 @@
 if(global.talking_time){click_buffer = 5}
 else if(click_buffer){click_buffer--;}
 
+//change cursor while hovering over stuff
+if(position_meeting(Cursor.x, Cursor.y, par_clickable)){Cursor.image_index = 1;}
+else{Cursor.image_index = 0;}
+
 if (mouse_check_button_pressed(mb_left))
 {
 	if(click_buffer) exit;

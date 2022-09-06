@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3dd12561-57a5-4992-a550-2e707c6db4ef","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3dd12561-57a5-4992-a550-2e707c6db4ef","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"LayerId":{"name":"0f8842e9-29e6-4ee1-94e5-ae42f1175134","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_Rat_Room","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"resourceVersion":"1.0","name":"3dd12561-57a5-4992-a550-2e707c6db4ef","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e6509bc2-a31f-47d7-a1e1-556c222607ec","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e6509bc2-a31f-47d7-a1e1-556c222607ec","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},"LayerId":{"name":"347fd99b-270f-4edb-b51d-ab5616db0078","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_AnthRoom_2","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},"resourceVersion":"1.0","name":"e6509bc2-a31f-47d7-a1e1-556c222607ec","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_Rat_Room","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},
+    "spriteId": {"name":"bg_AnthRoom_2","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a846965d-779f-431e-9046-71a7dee941f0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3dd12561-57a5-4992-a550-2e707c6db4ef","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"7a52d549-64d1-4ef0-8ea7-ba534602ca2b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6509bc2-a31f-47d7-a1e1-556c222607ec","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_Rat_Room","path":"sprites/bg_Rat_Room/bg_Rat_Room.yy",},
+    "parent": {"name":"bg_AnthRoom_2","path":"sprites/bg_AnthRoom_2/bg_AnthRoom_2.yy",},
     "resourceVersion": "1.4",
-    "name": "bg_Rat_Room",
+    "name": "bg_AnthRoom_2",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0f8842e9-29e6-4ee1-94e5-ae42f1175134","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"347fd99b-270f-4edb-b51d-ab5616db0078","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Rat_Room",
-    "path": "folders/Objects/RoomContent/Rat_Room.yy",
+    "name": "AnthonyRoom",
+    "path": "folders/Objects/RoomContent/Hall_1/AnthonyRoom.yy",
   },
   "resourceVersion": "1.0",
-  "name": "bg_Rat_Room",
+  "name": "bg_AnthRoom_2",
   "tags": [],
   "resourceType": "GMSprite",
 }

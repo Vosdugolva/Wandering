@@ -35,6 +35,7 @@ txtb_img_spd = 6/60;
 click_buffer = 0;
 
 Cursor = instance_create_depth(mouse_x,mouse_y,-99999,obj_cursor);
+Cursor.image_speed = 0;
 
 Inv_Add = function(_add_item){
 	ds_list_add(Main_inventory,_add_item);
@@ -78,4 +79,4 @@ set_active_size = function(_size){Active_size = _size; }
 adjust_active_size = function(_size){Active_size += _size; Active_size = clamp(Active_size,0,3);}
 
 
-Add_inventory_item(new Rat_Balloon());
+//Add_inventory_item(new Rat_Balloon());

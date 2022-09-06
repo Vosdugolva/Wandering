@@ -217,9 +217,9 @@ function Set_active_inflatable(_active){
 			}	
 }
 
-function Clear_active_inflatable(_active){
+function Clear_active_inflatable(){
 		with(obj_RoomHandler){
-			Remove_Active(_active);
+			Remove_Active();
 			}	
 			clear_commands();
 }

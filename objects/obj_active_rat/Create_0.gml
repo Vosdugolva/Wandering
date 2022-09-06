@@ -46,6 +46,8 @@ CM_Speak = function(){
 	case StartRoom: create_struct_textbox("Speak_StartRoom",Dialogue); exit;
 	case Rat_room: create_struct_textbox("Speak_Rat_Room",Dialogue); exit;
 	case Hall_1: create_struct_textbox("Speak_Hall_1",Dialogue); exit;
+	case AnthRoom_1: create_struct_textbox("Speak_AnthRoom_1",Dialogue); exit;
+	case AnthRoom_2: create_struct_textbox("Speak_AnthRoom_2",Dialogue); exit;
 	default:  break;
 	}
 	

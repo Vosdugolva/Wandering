@@ -164,6 +164,15 @@ global.Game_Dialogue = {
 
 #endregion
 			
+#region Anthony Room
+		AnthRoom1_intro : {
+			a: "after the rat unlocked the door, you stepped in to that looks nothing like what you'd expect for a bed room,",
+			b: "You find yourself in a large, rectangular room with a section being dedicated to a padded floor.",
+			c: "A small stairway to a balcony that looms over the padded flooring can also be seen, and before it's steps you see another doorway.",
+			
+		},
+#endregion
+			
 #region Ex stage 1 dialogue
 		ex1_lizard_1 : {
 			a: "That device back there is generating an [cb]anti magic field[cw] in the room.",
